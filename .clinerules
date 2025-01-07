@@ -1,8 +1,10 @@
 # User Story Workflow Rules
 
+## Project Name
+Project Name: bade-demo-mz29y8dqh
+
 ## Story Selection
 - When fetching user stories:
-  - Use root directory name as project name if not explicitly provided
   - Present stories for user selection
   - Allow user to select target stories for implementation by story title
 
