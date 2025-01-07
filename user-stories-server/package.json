@@ -1,0 +1,28 @@
+{
+  "name": "user-stories-tool",
+  "version": "0.1.0",
+  "description": "A Model Context Protocol server",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "user-stories-tool": "index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "inspector": "npx @modelcontextprotocol/inspector index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0",
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

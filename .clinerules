@@ -1,0 +1,36 @@
+# User Story Workflow Rules
+
+## Story Selection
+- When fetching user stories:
+  - Use root directory name as project name if not explicitly provided
+  - Present stories for user selection
+  - Allow user to select target stories for implementation by story title
+
+## Error Handling
+- On story fetch failure:
+  - Verify project name with user
+  - Prompt for correct project name if needed
+  - Retry fetch with corrected name
+  - Still error then ask user to directly provide task details to work on
+
+## Technical Design Integration
+- Before implementation:
+  - Fetch technical designs for project
+  - Filter relevant designs for selected story
+  - Proceed without designs if fetch fails
+  - In technical design there will be 2 fields `endpoints` and `pages`, endpoints refers to api endpoints and pages refers to pages in the frontend, api endpoints will be called using axios in pages in frontend
+
+## Development Guidelines
+- Package Manager:
+  - Use pnpm exclusively
+
+## Code Modification Rules
+- File Editing:
+  - Only modify files related to current task
+  - Skip files with correct implementation and there is no errors
+
+## Implementation Flow (only if user ask to work on user story)
+1. Story Selection
+2. Design Reference (if available)
+3. Implementation
+4. Validation
