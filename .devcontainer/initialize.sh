@@ -6,7 +6,7 @@ pnpm install
 # Fetch environment variables and update .env only if successful
 echo "Fetching environment variables..."
 response=$(curl -s -H "x-api-key: ldbrkfioyfsxvxuf" \
-  "https://tools-backend.dev.opengig.work/integrations/env/demo-gd5kk6llq")
+  "https://tools-backend.dev.opengig.work/integrations/env/demo-5wdkn8aaz")
 
 # Check if response contains error
 if [[ $response == *"statusCode\":500"* ]] || [[ $response == *"Internal server error"* ]]; then
