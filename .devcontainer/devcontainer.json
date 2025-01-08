@@ -18,7 +18,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "saoudrizwan.claude-dev"
+        "opengig.og-cline"
       ],
       "settings": {
         "editor.formatOnSave": true,

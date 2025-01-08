@@ -1,7 +1,7 @@
 # User Story Workflow Rules
 
 ## Project Name
-Project Name: {{project-name}}
+For all requests take project name as "demo-gd5kk6llq"
 
 ## Story Selection
 - When fetching user stories:
@@ -25,6 +25,9 @@ Project Name: {{project-name}}
 ## Development Guidelines
 - Package Manager:
   - Use pnpm exclusively
+  - Ignore errors related to quotes, it is fine to have single or double quotes in the code.
+  - If some import prefix like `@/` is used, then check config file and parse files accordingly.
+  - use shadcn/ui components as much as possible
 
 ## Code Modification Rules
 - File Editing:
