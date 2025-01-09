@@ -1,7 +1,7 @@
 # User Story Workflow Rules
 
 ## Project Name
-For all requests take project name as "blog-app-osjnnsc61"
+For all requests take project name as "demo-cggul303t"
 
 ## Story Selection
 - When fetching user stories:
@@ -15,12 +15,6 @@ For all requests take project name as "blog-app-osjnnsc61"
   - Retry fetch with corrected name
   - Still error then ask user to directly provide task details to work on
 
-## Technical Design Integration
-- Before implementation:
-  - Fetch technical designs for project
-  - Filter relevant designs for selected story
-  - Proceed without designs if fetch fails
-  - In technical design there will be 2 fields `endpoints` and `pages`, endpoints refers to api endpoints and pages refers to pages in the frontend, api endpoints will be called using axios in pages in frontend
 
 ## Development Guidelines
 - Package Manager:
@@ -28,14 +22,39 @@ For all requests take project name as "blog-app-osjnnsc61"
   - Ignore errors related to quotes, it is fine to have single or double quotes in the code.
   - If some import prefix like `@/` is used, then check config file and parse files accordingly.
   - use shadcn/ui components as much as possible
+  - If user is using other than REST API architecture then use that architecture instead of create backend endpoints, for example if user is using trpc use trpc instead of create backend endpoints
+  - Check if user has backend implemented in Different Directory, then create apis there and use them in frontend, for example user has 2 directories `server` and `client`, then create apis in `server` and use them in `client`
 
 ## Code Modification Rules
 - File Editing:
   - Only modify files related to current task
   - Skip files with correct implementation and there is no errors
 
+## Code Style and Linting
+- Formatting:
+  - Ignore ESLint warnings related to formatting
+  - Skip auto-fixing formatting issues
+  - Accept both single and double quotes
+  - Ignore whitespace and indentation warnings
+
+## Implementation Consistency
+- Design Pattern Analysis:
+  - Analyze 2-3 existing files from codebase
+  - Follow established project patterns and conventions
+  - Maintain consistent component structure
+  - Match existing styling methodology
+
+## Implementation Approach
+- End-to-End Implementation:
+  - Start with backend API endpoints
+  - Implement database models/schemas if needed
+  - Create API integration services
+  - Develop frontend UI components
+  - Add API integration in frontend
+  - Include error handling at all layers
+  - Follow existing project architecture patterns
+
 ## Implementation Flow (only if user ask to work on user story)
 1. Story Selection
-2. Design Reference (if available)
-3. Implementation
-4. Validation
+2. Implementation
+3. Validation
