@@ -1,7 +1,7 @@
 # User Story Workflow Rules
 
 ## Project Name
-For all requests take project name as "demo-cggul303t"
+For all requests take project name as "demo-41ot1moa2"
 
 ## Story Selection
 - When fetching user stories:
@@ -17,11 +17,10 @@ For all requests take project name as "demo-cggul303t"
 
 
 ## Development Guidelines
-- Package Manager:
-  - Use pnpm exclusively
+  - Use package manager which is used in project, can find out by looking at lock file (if typescript project).
   - Ignore errors related to quotes, it is fine to have single or double quotes in the code.
   - If some import prefix like `@/` is used, then check config file and parse files accordingly.
-  - use shadcn/ui components as much as possible
+  - use shadcn/ui components as much as possible (if frontend project is there)
   - If user is using other than REST API architecture then use that architecture instead of create backend endpoints, for example if user is using trpc use trpc instead of create backend endpoints
   - Check if user has backend implemented in Different Directory, then create apis there and use them in frontend, for example user has 2 directories `server` and `client`, then create apis in `server` and use them in `client`
 
@@ -43,9 +42,11 @@ For all requests take project name as "demo-cggul303t"
   - Follow established project patterns and conventions
   - Maintain consistent component structure
   - Match existing styling methodology
+  - Always Ignore any errors related to styling, Linting and formatting, mark it as success.
 
 ## Implementation Approach
 - End-to-End Implementation:
+  - While finding files to change, start with seeing directory structure and then read relevant files to understand the codebase.
   - Start with backend API endpoints
   - Implement database models/schemas if needed
   - Create API integration services
